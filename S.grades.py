@@ -1,8 +1,6 @@
 import pandas as pd
 
 # 1) CSV file load karna
-# Example: students.csv file
-# Columns: Name, Math, English, Science
 df = pd.read_csv("student_marks.csv")
 
 print("Original DataFrame:\n", df)
@@ -18,3 +16,4 @@ top_student = df.loc[df["Average"].idxmax()]
 print("\nTop Student:")
 print("Name:", top_student["Name"])
 print("Average Score:", top_student["Average"])
+
